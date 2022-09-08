@@ -1,0 +1,108 @@
+@import "mixin";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.page-title,
+.breadcrumb {
+	display: none;
+}
+
+.main {
+	background-color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.wrp {
+	margin-top: -20px;
+	position: relative;
+	font-family: 'PT Sans';
+}
+
+.container {
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	color: #999;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 18px;
+}
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@import "componets/supersubbota2022-header";
+
+
+

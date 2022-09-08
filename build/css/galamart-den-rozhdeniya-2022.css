@@ -1,0 +1,221 @@
+/*
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+  Maintain ratio mixin.
+  @param {List} [$ratio] Ratio the element needs to maintain. A 16:9 ratio would look like this:
+  .element { @include maintain-ratio(16 9); }
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.page-title,
+.breadcrumb {
+  display: none;
+}
+
+.main {
+  background-color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.wrp {
+  margin-top: -20px;
+  position: relative;
+  font-family: 'PT Sans';
+}
+
+.container {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-desktop-none {
+  display: none;
+}
+
+.d-mobile-none {
+  display: block;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  color: #999;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.supersubbota2022-header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EC6500), to(#EC6500));
+  background: -o-linear-gradient(top, #EC6500 0%, #EC6500 100%);
+  background: linear-gradient(180deg, #EC6500 0%, #EC6500 100%);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.supersubbota2022-header:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  right: 0;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-image: url("../img/back1.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  width: 100%;
+  height: 32px;
+}
+
+.supersubbota2022-header__body {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0 50px;
+}
+
+.supersubbota2022-header__img {
+  margin: 0 auto 30px;
+}
+
+.supersubbota2022-header__img img {
+  margin: 0 auto;
+}
+
+.supersubbota2022-header__btn {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #111111;
+  background-color: #FFED00;
+  padding: 13px;
+  border: none;
+  border-bottom: 3px solid #CCBE00;
+  position: relative;
+  z-index: 10;
+}
+
+.supersubbota2022-header__btn:hover {
+  opacity: .9;
+}
+
+.supersubbota2022-header__btn span {
+  border-bottom: 1px dotted #111111;
+}
+
+.supersubbota2022-header__decor1 {
+  position: absolute;
+  bottom: 0;
+  left: -213px;
+}
+
+.supersubbota2022-header__decor2 {
+  position: absolute;
+  bottom: 0;
+  right: -213px;
+}
+
+@media only screen and (max-width: 767px) {
+  .d-desktop-none {
+    display: block;
+  }
+
+  .d-mobile-none {
+    display: none !important;
+  }
+
+  .supersubbota2022-header__body {
+    padding: 60px 0 50px;
+  }
+
+  .supersubbota2022-header__decor1 {
+    left: -200px;
+  }
+
+  .supersubbota2022-header__decor1 img {
+    max-width: 279px;
+  }
+
+  .supersubbota2022-header__decor2 {
+    right: -53px;
+  }
+
+  .supersubbota2022-header__decor2 img {
+    max-width: 173px;
+  }
+}
