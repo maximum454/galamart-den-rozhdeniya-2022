@@ -1,47 +1,19 @@
+@@include('./partials/jquery.countdown.min.js')
 $(function () {
-    $('a[href^="#"]').on('click', function(event) {
-        // отменяем стандартное действие
-        event.preventDefault();
-
-        var sc = $(this).attr("href"),
-            dn = $(sc).offset().top-130;
-
-        $('html, body').animate({scrollTop: dn}, 1000);
-    });
-
-    $('.js-all-more').on('click', function (){
-        $('.all-block__item').removeClass('hidden');
-        $(this).addClass('d-none');
-    })
-
-    $('.js-slider-add').on('click', function (){
-        $('.slider-block').removeClass('hidden');
-        $(this).addClass('d-none');
-    })
-
     $('.wrp').parent('.container').css({'max-width':'100%', 'padding':'0'});
 
-    $('.js-category-more').on('click', function (){
-        $('.supersubbota2022-category__body').removeClass('d-none')
-    })
+    $('#getting-started').countdown('2022/10/09', function(event) {
+        $(this).html(event.strftime('%H:%M:%S'));
+    }).on('finish.countdown', function (e){
+        console.log(1)
+    });
 })
 
-const swiperBlock = new Swiper('.swiper-block', {
-    slidesPerView: 5,
+const swiperDenRozhdeniya2022 = new Swiper('.swiper-den-rozhdeniya-2022', {
+    slidesPerView: 1,
     spaceBetween: 0,
-    pagination: {
-        el: '.swiper-pagination',
-    },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
-        320: {
-            slidesPerView: 2,
-        },
-        768: {
-            slidesPerView: 5,
-        }
-    }
 });

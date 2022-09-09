@@ -1,6 +1,54 @@
 .den-rozhdeniya-2022-stock{
-	&__header{}
-	&__title{}
-	&__top{}
-	&__top{}
+	padding-top: 110px;
+	padding-bottom: 142px;
+	background: #FFFFFF;
+	border-radius: 20px;
+	margin-top: 30px;
+	&__header{
+		margin-bottom: 30px;
+	}
+	&__title{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 78px;
+		text-align: center;
+		text-transform: uppercase;
+		background: linear-gradient(200deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		margin: 0;
+	}
+	&__top{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+		margin-bottom: 14px;
+	}
+	&__item{
+		flex: 1 0 350px;
+		max-width: 350px;
+		display: block;
+		text-decoration: none;
+	}
+	&__figure{
+		margin: 0 0 30px;
+		img{
+			display: block;
+			margin: 0;
+		}
+	}
+	&__name{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 39px;
+		text-align: center;
+		color: #F15A22;
+	}
 }

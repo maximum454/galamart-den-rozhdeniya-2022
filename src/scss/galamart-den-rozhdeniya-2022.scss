@@ -78,15 +78,22 @@ p {
 	height: auto;
 }
 
+.swiper-button-next, .swiper-button-prev{
+	width: 100px;
+	height: 100px;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
 	content: "";
 	width: 100%;
 	height: 100%;
-	color: #999;
+	color: #F15A22;
+	background-image: url("../img/arrow.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 18px;
+}
+.swiper-button-prev:after {
+	transform: rotate(180deg);
 }
 
 .embed-container {
@@ -112,6 +119,8 @@ p {
 @import "componets/den-rozhdeniya-2022-calendar";
 @import "componets/den-rozhdeniya-2022-footer";
 @import "componets/den-rozhdeniya-2022-stock";
+@import "componets/den-rozhdeniya-2022-count";
+@import "componets/den-rozhdeniya-2022-slider";
 
 
 

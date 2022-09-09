@@ -1,28 +1,39 @@
-.den-rozhdeniya-2022-info{
-	background-color: #fff;
-	padding: 56px 0 62px;
-	border-radius: 20px;
-	&__title{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 600;
-		font-size: 28px;
-		line-height: 34px;
-		text-align: center;
-		color: #000000;
-		margin: 0 0 20px;
+.den-rozhdeniya-2022-slider{
+	overflow: hidden;
+	margin-bottom: 83px;
+	position: relative;
+	&__item{
+		display: flex;
+		align-items: flex-end;
+		gap: 27px;
 	}
-	&__text{
+	&__figure{
+		margin: 0;
+		flex: 1 0 635px;
+	}
+	&__content{
+		height: 100%;
+	}
+	&__anons{
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 40px;
+		line-height: 52px;
 		color: #121111;
-		margin: 0 0 40px;
+		margin: 0 0 5px;
+		padding-right: 40px;
+	}
+	&__percent{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 112px;
+		line-height: 137px;
+		color: #6F2C91;
+		margin: 0 0 60px;
 	}
 	&__btn{
-		max-width: 350px;
 		width: 100%;
 		margin: 0 auto;
 		display: flex;

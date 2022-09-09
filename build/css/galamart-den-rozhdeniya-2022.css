@@ -86,15 +86,27 @@ p {
   height: auto;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  width: 100px;
+  height: 100px;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   content: "";
   width: 100%;
   height: 100%;
-  color: #999;
+  color: #F15A22;
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 18px;
+}
+
+.swiper-button-prev:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .embed-container {
@@ -121,23 +133,6 @@ p {
   position: relative;
   z-index: 1;
   text-align: center;
-}
-
-.den-rozhdeniya-2022-header:after {
-  content: '';
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  right: 0;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  background-image: url("../img/back1.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
-  width: 100%;
-  height: 32px;
 }
 
 .den-rozhdeniya-2022-header__body {
@@ -199,6 +194,18 @@ p {
 .den-rozhdeniya-2022-header__text {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-top: 49px;
+  background: -o-linear-gradient(250deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+  background: linear-gradient(200deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 63px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .den-rozhdeniya-2022-header__btn {
@@ -274,7 +281,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #F15A22;
-  padding: 13px;
+  padding: 10px;
   border: none;
   position: relative;
   z-index: 10;
@@ -313,8 +320,8 @@ p {
   line-height: 78px;
   text-align: center;
   text-transform: uppercase;
-  background: -o-linear-gradient(209.91deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
-  background: linear-gradient(240.09deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+  background: -o-linear-gradient(250deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+  background: linear-gradient(200deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -347,7 +354,7 @@ p {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
-  padding: 30px 0 14px;
+  padding: 30px 0 20px;
 }
 
 .den-rozhdeniya-2022-calendar__item.active {
@@ -365,13 +372,13 @@ p {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 32px;
   text-align: center;
   color: #6F2C91;
 }
 
 .den-rozhdeniya-2022-calendar__figure {
-  margin: 0 0 5px;
+  margin: 0 0 13px;
 }
 
 .den-rozhdeniya-2022-calendar__figure img {
@@ -396,8 +403,8 @@ p {
   background-image: url("../img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 121px;
   margin-top: -20px;
 }
 
@@ -419,6 +426,175 @@ p {
   line-height: 22px;
   color: #1E0C34;
   margin: 0;
+}
+
+.den-rozhdeniya-2022-stock {
+  padding-top: 110px;
+  padding-bottom: 142px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.den-rozhdeniya-2022-stock__header {
+  margin-bottom: 30px;
+}
+
+.den-rozhdeniya-2022-stock__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  text-transform: uppercase;
+  background: -o-linear-gradient(250deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+  background: linear-gradient(200deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0;
+}
+
+.den-rozhdeniya-2022-stock__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin-bottom: 14px;
+}
+
+.den-rozhdeniya-2022-stock__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 350px;
+          flex: 1 0 350px;
+  max-width: 350px;
+  display: block;
+  text-decoration: none;
+}
+
+.den-rozhdeniya-2022-stock__figure {
+  margin: 0 0 30px;
+}
+
+.den-rozhdeniya-2022-stock__figure img {
+  display: block;
+  margin: 0;
+}
+
+.den-rozhdeniya-2022-stock__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #F15A22;
+}
+
+.den-rozhdeniya-2022-count__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #6F2C91;
+  margin: 0 0 10px;
+}
+
+.den-rozhdeniya-2022-count__body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 183px;
+  text-align: center;
+  color: #F15A22;
+}
+
+.den-rozhdeniya-2022-slider {
+  overflow: hidden;
+  margin-bottom: 83px;
+  position: relative;
+}
+
+.den-rozhdeniya-2022-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 27px;
+}
+
+.den-rozhdeniya-2022-slider__figure {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 635px;
+          flex: 1 0 635px;
+}
+
+.den-rozhdeniya-2022-slider__content {
+  height: 100%;
+}
+
+.den-rozhdeniya-2022-slider__anons {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #121111;
+  margin: 0 0 5px;
+  padding-right: 40px;
+}
+
+.den-rozhdeniya-2022-slider__percent {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 137px;
+  color: #6F2C91;
+  margin: 0 0 60px;
+}
+
+.den-rozhdeniya-2022-slider__btn {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F15A22;
+  padding: 10px;
+  border: none;
+  position: relative;
+  z-index: 10;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.den-rozhdeniya-2022-slider__btn:hover {
+  opacity: .9;
 }
 
 @media only screen and (max-width: 767px) {
