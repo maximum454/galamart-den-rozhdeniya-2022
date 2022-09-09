@@ -5,8 +5,13 @@
 }
 
 body {
+	background: linear-gradient(186.22deg, #14093A 0.2%, #3C1DA6 51.55%, #14093A 98.79%);
 	&.lock {
 		overflow: hidden;
+	}
+	&>.container{
+		padding: 0;
+		max-width: 100%;
 	}
 }
 
@@ -16,7 +21,6 @@ body {
 }
 
 .main {
-	background-color: #fff;
 	font-family: 'PT Sans', sans-serif;
 	overflow: hidden;
 	margin-top: 10px;
@@ -26,15 +30,16 @@ body {
 	margin-top: -20px;
 	position: relative;
 	font-family: 'PT Sans';
+	.container {
+		max-width: 1140px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 }
 
-.container {
-	max-width: 1350px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 
 p {
 	font-size: 14px;
@@ -102,7 +107,10 @@ p {
 	height: 100%;
 }
 
-@import "componets/supersubbota2022-header";
+@import "componets/den-rozhdeniya-2022-header";
+@import "componets/den-rozhdeniya-2022-info";
+@import "componets/den-rozhdeniya-2022-calendar";
+@import "componets/den-rozhdeniya-2022-footer";
 
 
 

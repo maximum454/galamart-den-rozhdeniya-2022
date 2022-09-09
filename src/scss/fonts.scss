@@ -1,10 +1,32 @@
+/* Montserrat-regular - latin */
 @font-face {
-	font-family: 'Firenight';
-	src: url('../fonts/Firenight/MyriadPro-Regular.eot');
-	src: url('../fonts/Firenight/Firenight-regular.woff') format('woff'),
-	url('../fonts/Firenight/Firenight-regular.woff2') format('truetype');
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.eot');
+	src: local(''),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.woff') format('woff'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.ttf') format('truetype'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-regular.svg#Montserrat') format('svg');
+}
+/* Montserrat-800 - latin */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-800.eot');
+	src: local(''),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-800.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-800.woff2') format('woff2'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-800.woff') format('woff'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-800.ttf') format('truetype'),
+	url('../fonts/Montserrat/montserrat-v25-latin_cyrillic-800.svg#Montserrat') format('svg');
 }
 
 
 
-$font1: 'Firenight', sans-serif;
+$font1: 'Montserrat', sans-serif;

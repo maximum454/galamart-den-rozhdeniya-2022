@@ -1,0 +1,64 @@
+.den-rozhdeniya-2022-calendar{
+	background: #FFFFFF;
+	border-radius: 20px;
+	margin-top: 30px;
+	position: relative;
+	z-index: 1;
+	padding-top: 109px;
+	padding-bottom: 203px;
+	&__header{
+		margin-bottom: 70px;
+	}
+	&__title{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 78px;
+		text-align: center;
+		text-transform: uppercase;
+		background: linear-gradient(240.09deg, #543183 19.89%, #3F296F 45.39%, #985BEC 51.85%, #2B2058 56.96%, #47296F 85.18%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		margin: 0;
+	}
+	&__body{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item{
+		flex: 1 0 255px;
+		max-width: 255px;
+		background: #FFFFFF;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0px -6px 2px #FEA503;
+		border-radius: 30px;
+		padding: 30px 0 14px;
+	}
+	&__date{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		color: #6F2C91;
+	}
+	&__figure{
+		margin: 0;
+		img{
+			display: block;
+			object-fit: cover;
+		}
+	}
+	&__name{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		text-align: center;
+		color: #F15A22;
+	}
+}

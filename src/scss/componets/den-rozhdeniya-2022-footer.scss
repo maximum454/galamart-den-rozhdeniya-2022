@@ -1,0 +1,27 @@
+.den-rozhdeniya-2022-footer{
+	background-image: url("../img/footer-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	margin-top: -20px;
+
+	&__copy{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 39px;
+		color: #FFFFFF;
+		margin: 0 0 20px;
+	}
+	&__text{
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #1E0C34;
+		margin: 0;
+	}
+}

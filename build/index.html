@@ -38,6 +38,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://galamart.ru/local/templates/new_main/assets/build/css/app.min.css?1650294138414082">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -47,24 +51,57 @@
 <body>
 <div class="container">
     <div class="wrp">
-        <div class="supersubbota2022-header">
-                <div class="supersubbota2022-header__body">
-                    <div class="supersubbota2022-header__decor1">
-                        <img class="img-fluid" src="./img/header-1.png" width="530" height="236" alt="">
-                    </div>
-                    <div class="supersubbota2022-header__decor2">
-                        <img class="img-fluid" src="./img/header-2.png" width="428" height="236" alt="">
-                    </div>
-                    <div class="supersubbota2022-header__img">
-                        <img class="img-fluid d-mobile-none" src="./img/header-bg.png" width="833" height="447" alt="">
-                        <img class="img-fluid d-desktop-none" src="./img/header-bg-mobile.png" width="311" height="299" alt="">
-                    </div>
-                    <button type="button" class="supersubbota2022-header__btn" data-toggle="modal" data-target="#supersubbota2022"><span>Полные условия акции</span></button>
+        <div class="den-rozhdeniya-2022-header">
+            <div class="den-rozhdeniya-2022-header__body">
+                <div class="den-rozhdeniya-2022-header__img">
+                    <img class="img-fluid" src="./img/bg.jpg" width="1440" height="460" alt="">
                 </div>
+                <div class="den-rozhdeniya-2022-header__content">
+                    <div class="den-rozhdeniya-2022-header__text"><img class="img-fluid" src="./img/text.svg" width="531" height="63" alt=""></div>
+                    <div class="den-rozhdeniya-2022-header__logo"><img class="img-fluid" src="./img/logo.svg" width="757" height="173" alt=""></div>
+                </div>
+            </div>
 
         </div>
 
-        <div class="modal d-none" tabindex="-1" role="dialog" id="supersubbota2022">
+        <div class="den-rozhdeniya-2022-info">
+            <div class="container">
+                <h1 class="den-rozhdeniya-2022-info__title">Галамарт празднует свой 13-й день рождения 24&nbsp;сентября&nbsp; <br>В честь торжества&nbsp;&mdash; неделя невероятных скидок!</h1>
+                <p class="den-rozhdeniya-2022-info__text">В&nbsp;магазинах акции будут действовать на&nbsp;товары с&nbsp;белыми ценниками, а&nbsp;на&nbsp;сайте скидки автоматически будут применены в&nbsp;указанные даты. С&nbsp;19&nbsp;по&nbsp;24&nbsp;сентября в&nbsp;розничных магазинах можно будет приобрести товары по&nbsp;шок-ценам*. Также 24&nbsp;сентября в&nbsp;18:00&nbsp;в магазинах будет проводиться розыгрыш ценных подарков. Для участия в&nbsp;розыгрыше с&nbsp;12.09&nbsp;мы вручаем купоны за&nbsp;чеки от&nbsp;200&nbsp;рублей. Подробности акции уточняйте по&nbsp;ссылке и&nbsp;у&nbsp;сотрудников в&nbsp;магазине.</p>
+                <button type="button" class="den-rozhdeniya-2022-info__btn" data-toggle="modal" data-target="denrozhdeniya2022"><span>ПОСМОТРЕТЬ УСЛОВИЯ</span></button>
+            </div>
+        </div>
+
+        <div class="den-rozhdeniya-2022-calendar">
+            <div class="container">
+                <div class="den-rozhdeniya-2022-calendar__header">
+                    <div class="den-rozhdeniya-2022-calendar__title">Календарь акций</div>
+                </div>
+                <div class="den-rozhdeniya-2022-calendar__body">
+                    <div class="den-rozhdeniya-2022-calendar__item">
+                        <div class="den-rozhdeniya-2022-calendar__date">
+                            17 сентября<br>
+                            суббота
+                        </div>
+                        <figure class="den-rozhdeniya-2022-calendar__figure">
+                            <img class="img-fluid" src="" alt="">
+                        </figure>
+                        <div class="den-rozhdeniya-2022-calendar__name">Канцелярские
+                            товары</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="den-rozhdeniya-2022-footer">
+            <div class="container">
+                <div class="den-rozhdeniya-2022-footer__copy">&copy;&nbsp;2009-2022 Галамарт</div>
+                <p class="den-rozhdeniya-2022-footer__text">Информация по&nbsp;наличию товаров обновляется с&nbsp;интервалом в&nbsp;1&nbsp;сутки. Уточняйте о&nbsp;наличии товара
+                    по&nbsp;телефонам магазинов. Характеристики товаров в&nbsp;магазинах могут отличаться от&nbsp;представленных на&nbsp;сайте.</p>
+            </div>
+        </div>
+
+        <div class="modal d-none" tabindex="-1" role="dialog" id="denrozhdeniya2022">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">

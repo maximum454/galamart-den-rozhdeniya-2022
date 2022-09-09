@@ -1,6 +1,5 @@
-.supersubbota2022-header{
-  background: linear-gradient(180deg, #EC6500 0%, #EC6500 100%);
-
+.den-rozhdeniya-2022-header{
+  background: linear-gradient(186.22deg, #14093A 0.2%, #3C1DA6 51.55%, #14093A 98.79%);
   position: relative;
   z-index: 1;
   text-align: center;
@@ -21,13 +20,45 @@
   &__body{
     position: relative;
     overflow: hidden;
-    padding: 30px 0 50px;
+    padding: 0;
   }
   &__img{
-    margin: 0 auto 30px;
+    margin: 0 auto;
     img{
       margin: 0 auto;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
+  }
+  &__content{
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 100%;
+    max-width: 701px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: #FFDDB8;
+      width: 100%;
+      height: 100%;
+      filter: blur(200px);
+    }
+  }
+  &__text{
+    align-self: flex-end;
   }
   &__btn{
     margin: 0 auto;
@@ -52,32 +83,7 @@
       border-bottom: 1px dotted #111111;
     }
   }
-  &__decor1{
-    position: absolute;
-    bottom: 0;
-    left: -213px;
-  }
-  &__decor2{
-    position: absolute;
-    bottom: 0;
-    right: -213px;
-  }
   @include r(767){
 
-    &__body{
-      padding: 60px 0 50px;
-    }
-    &__decor1{
-      left: -200px;
-      img{
-        max-width: 279px;
-      }
-    }
-    &__decor2{
-      right: -53px;
-      img{
-        max-width: 173px;
-      }
-    }
   }
 }
