@@ -328,18 +328,36 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 60px 30px;
 }
 
 .den-rozhdeniya-2022-calendar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 255px;
           flex: 1 0 255px;
   max-width: 255px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0px -6px 2px #FEA503;
-          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0px -6px 2px #FEA503;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   padding: 30px 0 14px;
+}
+
+.den-rozhdeniya-2022-calendar__item.active {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0px -6px 2px #FEA503;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0px -6px 2px #FEA503;
+}
+
+.den-rozhdeniya-2022-calendar__item.disabled {
+  pointer-events: none;
+  opacity: .4;
 }
 
 .den-rozhdeniya-2022-calendar__date {
@@ -353,7 +371,7 @@ p {
 }
 
 .den-rozhdeniya-2022-calendar__figure {
-  margin: 0;
+  margin: 0 0 5px;
 }
 
 .den-rozhdeniya-2022-calendar__figure img {
@@ -370,6 +388,8 @@ p {
   line-height: 29px;
   text-align: center;
   color: #F15A22;
+  padding: 0 10px;
+  margin: auto;
 }
 
 .den-rozhdeniya-2022-footer {
