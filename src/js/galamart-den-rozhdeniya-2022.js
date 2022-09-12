@@ -99,8 +99,10 @@ window.addEventListener('load', function() {
 window.addEventListener('resize', function() {
     if($('.swipercalendar').length){
         swiperCalendarMode();
+
     }
     if($('.swipertop').length){
         swiperTopMode();
+        swiperTop.update()
     }
 });

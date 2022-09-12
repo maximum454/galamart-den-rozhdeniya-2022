@@ -79,12 +79,19 @@
 	.swiper-wrapper{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		gap: 60px 30px;
 	}
 	.swiper-slide{
 		flex: 1 0 255px;
 		max-width: 255px;
 		height: auto;
+	}
+	@include r(980){
+		.swiper-slide{
+			flex: 1 0 238px;
+			max-width: 238px;
+		}
 	}
 	@include r(767){
 		padding-top: 60px;

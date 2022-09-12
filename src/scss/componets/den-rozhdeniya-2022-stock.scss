@@ -69,9 +69,10 @@
 			line-height: 44px;
 		}
 		.swipertop .swiper-wrapper{
-			display: flex;
 			flex-wrap: nowrap;
 			gap: 0;
+			justify-content: flex-start;
+			width: 100%;
 		}
 		.swipertop .swiper-slide{
 			flex: 1 0 auto;

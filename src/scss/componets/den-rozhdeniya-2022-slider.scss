@@ -9,10 +9,15 @@
 	}
 	&__figure{
 		margin: 0;
-		flex: 1 0 635px;
+		flex: 1 1 635px;
+		img{
+			margin: 0 auto;
+			display: block;
+		}
 	}
 	&__content{
 		height: 100%;
+		flex: 1 0 448px;
 	}
 	&__anons{
 		font-family: 'Montserrat';
@@ -59,7 +64,7 @@
 		}
 
 	}
-	@include r(767){
+	@include r(980){
 		margin-bottom: 90px;
 		&__item{
 			display: block;
