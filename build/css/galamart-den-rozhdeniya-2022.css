@@ -474,16 +474,8 @@ p {
 }
 
 .den-rozhdeniya-2022-stock__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
   margin-bottom: 14px;
+  overflow: hidden;
 }
 
 .den-rozhdeniya-2022-stock__item {
@@ -512,6 +504,26 @@ p {
   line-height: 39px;
   text-align: center;
   color: #F15A22;
+}
+
+.den-rozhdeniya-2022-stock .swipertop .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.den-rozhdeniya-2022-stock .swipertop .swiper-slide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 255px;
+          flex: 1 0 255px;
+  max-width: 255px;
+  height: auto;
 }
 
 .den-rozhdeniya-2022-count__title {
@@ -625,7 +637,7 @@ p {
   .den-rozhdeniya-2022-header__body {
     background: -o-linear-gradient(355.17deg, #E6860C 36.78%, #FF960A 42.72%);
     background: linear-gradient(94.83deg, #E6860C 36.78%, #FF960A 42.72%);
-    padding-bottom: 90px;
+    padding-bottom: 107px;
   }
 
   .den-rozhdeniya-2022-header__content {
@@ -682,7 +694,8 @@ p {
 
   .den-rozhdeniya-2022-calendar {
     padding-top: 60px;
-    padding-bottom: 126px;
+    padding-bottom: 115px;
+    margin-top: 20px;
   }
 
   .den-rozhdeniya-2022-calendar__header {
@@ -703,6 +716,7 @@ p {
   .den-rozhdeniya-2022-footer {
     background-image: url("../img/footer-bg-mobile.jpg");
     background-size: cover;
+    padding-top: 107px;
   }
 
   .den-rozhdeniya-2022-footer__copy {
@@ -720,6 +734,29 @@ p {
   .den-rozhdeniya-2022-stock {
     padding-top: 60px;
     padding-bottom: 116px;
+    margin-top: 20px;
+  }
+
+  .den-rozhdeniya-2022-stock__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .den-rozhdeniya-2022-stock .swipertop .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .den-rozhdeniya-2022-stock .swipertop .swiper-slide {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    max-width: 100%;
+    height: auto;
   }
 
   .den-rozhdeniya-2022-count__title {

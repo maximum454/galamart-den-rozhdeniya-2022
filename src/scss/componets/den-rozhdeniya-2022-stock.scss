@@ -23,11 +23,8 @@
 		margin: 0;
 	}
 	&__top{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 30px;
 		margin-bottom: 14px;
+		overflow: hidden;
 	}
 	&__item{
 		flex: 1 0 350px;
@@ -51,8 +48,35 @@
 		text-align: center;
 		color: #F15A22;
 	}
+	.swipertop .swiper-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: center;
+	}
+	.swipertop .swiper-slide{
+		flex: 1 0 255px;
+		max-width: 255px;
+		height: auto;
+	}
+
 	@include r(767){
 		padding-top: 60px;
 		padding-bottom: 116px;
+		margin-top: 20px;
+		&__title{
+			font-size: 36px;
+			line-height: 44px;
+		}
+		.swipertop .swiper-wrapper{
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 0;
+		}
+		.swipertop .swiper-slide{
+			flex: 1 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
 	}
 }

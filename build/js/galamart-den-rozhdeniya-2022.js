@@ -80,14 +80,44 @@ function swiperCalendarMode() {
     swiperCalendar.update();
 }
 
+var swiperTop= swiperTop;
+var swiperTopInit = false;
+
+
+function swiperTopMode() {
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+    let desktop = window.matchMedia('(min-width: 768px)');
+    if (desktop.matches) {
+        if(swiperTop){
+            swiperTop.destroy();
+            swiperTopInit = false;
+        }
+    } else if (mobile.matches) {
+        if (!swiperTopInit) {
+            swiperTopInit = true;
+            document.querySelectorAll('.den-rozhdeniya-2022-stock').forEach(n => {
+                swiperTop = new Swiper(n.querySelector('.swipertop'), {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    observer: true,
+                    observeParents: true,
+                });
+            });
+        }
+    }
+    swiperCalendar.update();
+}
+
 window.addEventListener('load', function() {
-    if($('.swipercalendar').length){
+    if($('.swipercalendar,.swipertop').length){
         swiperCalendarMode();
+        swiperTopMode();
     }
 });
 
 window.addEventListener('resize', function() {
-    if($('.swipercalendar').length){
+    if($('.swipercalendar, .swipertop').length){
         swiperCalendarMode();
+        swiperTopMode();
     }
 });
