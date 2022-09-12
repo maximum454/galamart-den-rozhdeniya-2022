@@ -51,4 +51,8 @@
 		text-align: center;
 		color: #F15A22;
 	}
+	@include r(767){
+		padding-top: 60px;
+		padding-bottom: 116px;
+	}
 }

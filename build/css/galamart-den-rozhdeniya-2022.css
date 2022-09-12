@@ -699,4 +699,37 @@ p {
         flex-wrap: nowrap;
     gap: 0;
   }
+
+  .den-rozhdeniya-2022-footer {
+    background-image: url("../img/footer-bg-mobile.jpg");
+    background-size: cover;
+  }
+
+  .den-rozhdeniya-2022-footer__copy {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+
+  .den-rozhdeniya-2022-footer__text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .den-rozhdeniya-2022-stock {
+    padding-top: 60px;
+    padding-bottom: 116px;
+  }
+
+  .den-rozhdeniya-2022-count__title {
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 0 15px;
+  }
+
+  .den-rozhdeniya-2022-count__body {
+    font-size: 80px;
+    line-height: 98px;
+  }
 }

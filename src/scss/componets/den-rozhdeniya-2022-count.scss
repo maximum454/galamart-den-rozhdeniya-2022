@@ -18,4 +18,15 @@
 		text-align: center;
 		color: #F15A22;
 	}
+	@include r(767){
+		&__title{
+			font-size: 32px;
+			line-height: 39px;
+			margin: 0 0 15px;
+		}
+		&__body{
+			font-size: 80px;
+			line-height: 98px;
+		}
+	}
 }
