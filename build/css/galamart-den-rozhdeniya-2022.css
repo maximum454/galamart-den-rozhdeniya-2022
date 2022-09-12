@@ -147,7 +147,6 @@ p {
 
 .den-rozhdeniya-2022-header__img img {
   margin: 0 auto;
-  display: block;
   width: 100%;
   height: 100%;
 }
@@ -244,6 +243,9 @@ p {
   background-color: #fff;
   padding: 56px 0 62px;
   border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
 }
 
 .den-rozhdeniya-2022-info__title {
@@ -308,6 +310,11 @@ p {
   padding-bottom: 203px;
 }
 
+.den-rozhdeniya-2022-calendar .container {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
 .den-rozhdeniya-2022-calendar__header {
   margin-bottom: 70px;
 }
@@ -329,15 +336,6 @@ p {
   margin: 0;
 }
 
-.den-rozhdeniya-2022-calendar__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 60px 30px;
-}
-
 .den-rozhdeniya-2022-calendar__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,6 +348,7 @@ p {
       -ms-flex: 1 0 255px;
           flex: 1 0 255px;
   max-width: 255px;
+  height: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -397,6 +396,23 @@ p {
   color: #F15A22;
   padding: 0 10px;
   margin: auto;
+}
+
+.den-rozhdeniya-2022-calendar .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 60px 30px;
+}
+
+.den-rozhdeniya-2022-calendar .swiper-slide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 255px;
+          flex: 1 0 255px;
+  max-width: 255px;
+  height: auto;
 }
 
 .den-rozhdeniya-2022-footer {
@@ -604,5 +620,83 @@ p {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .den-rozhdeniya-2022-header__body {
+    background: -o-linear-gradient(355.17deg, #E6860C 36.78%, #FF960A 42.72%);
+    background: linear-gradient(94.83deg, #E6860C 36.78%, #FF960A 42.72%);
+    padding-bottom: 90px;
+  }
+
+  .den-rozhdeniya-2022-header__content {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    max-width: 100%;
+    display: block;
+    padding: 0 15px;
+  }
+
+  .den-rozhdeniya-2022-header__content:before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #FFDDB8;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(200px);
+            filter: blur(200px);
+  }
+
+  .den-rozhdeniya-2022-header__text {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: left;
+  }
+
+  .den-rozhdeniya-2022-info {
+    padding: 68px 0 82px;
+  }
+
+  .den-rozhdeniya-2022-info__title {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: left;
+    margin: 0 0 25px;
+  }
+
+  .den-rozhdeniya-2022-info__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 35px;
+  }
+
+  .den-rozhdeniya-2022-calendar {
+    padding-top: 60px;
+    padding-bottom: 126px;
+  }
+
+  .den-rozhdeniya-2022-calendar__header {
+    margin-bottom: 40px;
+  }
+
+  .den-rozhdeniya-2022-calendar__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .den-rozhdeniya-2022-calendar .swiper-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
   }
 }
