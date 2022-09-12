@@ -59,4 +59,37 @@
 		}
 
 	}
+	@include r(767){
+		margin-bottom: 90px;
+		&__item{
+			display: block;
+		}
+		&__figure{
+			margin-bottom: 47px;
+		}
+		&__anons{
+			font-size: 28px;
+			line-height: 40px;
+			margin: 0 0 5px;
+			padding-right: 0;
+		}
+		&__percent{
+			font-size: 115px;
+			line-height: 140px;
+			margin-bottom: 3px;
+		}
+		.swiper-button-next:after, .swiper-button-prev:after{
+			background-size: 100%;
+		}
+		.swiper-button-next, .swiper-button-prev {
+			width: 60px;
+			height: 60px;
+		}
+		.swiper-button-next{
+			right: 0;
+		}
+		.swiper-button-prev {
+			left: 0;
+		}
+	}
 }

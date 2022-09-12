@@ -109,15 +109,19 @@ function swiperTopMode() {
 }
 
 window.addEventListener('load', function() {
-    if($('.swipercalendar,.swipertop').length){
+    if($('.swipercalendar').length){
         swiperCalendarMode();
+    }
+    if($('.swipertop').length){
         swiperTopMode();
     }
 });
 
 window.addEventListener('resize', function() {
-    if($('.swipercalendar, .swipertop').length){
+    if($('.swipercalendar').length){
         swiperCalendarMode();
+    }
+    if($('.swipertop').length){
         swiperTopMode();
     }
 });

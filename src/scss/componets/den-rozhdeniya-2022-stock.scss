@@ -4,6 +4,7 @@
 	background: #FFFFFF;
 	border-radius: 20px;
 	margin-top: 30px;
+	overflow: hidden;
 	&__header{
 		margin-bottom: 30px;
 	}
@@ -24,7 +25,6 @@
 	}
 	&__top{
 		margin-bottom: 14px;
-		overflow: hidden;
 	}
 	&__item{
 		flex: 1 0 350px;

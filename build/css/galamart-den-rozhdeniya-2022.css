@@ -450,6 +450,7 @@ p {
   background: #FFFFFF;
   border-radius: 20px;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 .den-rozhdeniya-2022-stock__header {
@@ -475,7 +476,6 @@ p {
 
 .den-rozhdeniya-2022-stock__top {
   margin-bottom: 14px;
-  overflow: hidden;
 }
 
 .den-rozhdeniya-2022-stock__item {
@@ -768,5 +768,49 @@ p {
   .den-rozhdeniya-2022-count__body {
     font-size: 80px;
     line-height: 98px;
+  }
+
+  .den-rozhdeniya-2022-slider {
+    margin-bottom: 90px;
+  }
+
+  .den-rozhdeniya-2022-slider__item {
+    display: block;
+  }
+
+  .den-rozhdeniya-2022-slider__figure {
+    margin-bottom: 47px;
+  }
+
+  .den-rozhdeniya-2022-slider__anons {
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0 0 5px;
+    padding-right: 0;
+  }
+
+  .den-rozhdeniya-2022-slider__percent {
+    font-size: 115px;
+    line-height: 140px;
+    margin-bottom: 3px;
+  }
+
+  .den-rozhdeniya-2022-slider .swiper-button-next:after,
+  .den-rozhdeniya-2022-slider .swiper-button-prev:after {
+    background-size: 100%;
+  }
+
+  .den-rozhdeniya-2022-slider .swiper-button-next,
+  .den-rozhdeniya-2022-slider .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+  }
+
+  .den-rozhdeniya-2022-slider .swiper-button-next {
+    right: 0;
+  }
+
+  .den-rozhdeniya-2022-slider .swiper-button-prev {
+    left: 0;
   }
 }
